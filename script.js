@@ -1,8 +1,9 @@
-// Sample meeting room data (you can replace this with your own data)
+// Sample meeting room data
 const meetingRooms = [
     { id: 1, name: 'Room A' },
     { id: 2, name: 'Room B' },
     { id: 3, name: 'Room C' },
+    { id: 4, name: 'Room D' },
 ];
 
 const bookings = [];
