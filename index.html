@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Meeting Room Booking System</title>
+</head>
+<body>
+    <header>
+        <h1>Meeting Room Booking System</h1>
+    </header>
+    <main>
+        <section class="booking-section">
+            <h2>Book a Meeting Room</h2>
+            <form id="booking-form">
+                <label for="room">Select Room:</label>
+                <select id="room" required>
+                    <option value="" disabled selected>Select a room</option>
+                    <!-- Room options will be dynamically added here -->
+                </select>
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" required>
+                <label for="time">Select Time:</label>
+                <input type="time" id="time" step="1800" required>
+                <button type="submit">Book Room</button>
+            </form>
+            <h2>Your Bookings</h2>
+            <ul id="user-bookings">
+                <!-- User's bookings will be dynamically added here -->
+            </ul>
+        </section>
+        <section class="rooms-section">
+            <h2>Available Meeting Rooms</h2>
+            <ul id="room-list">
+                <!-- Meeting rooms and booking status will be dynamically added here -->
+            </ul>
+        </section>
+    </main>
+    <script src="/script.js"></script>
+</body>
+</html>
